@@ -10,7 +10,7 @@ RUN pip install --upgrade pip awsebcli --use-deprecated=legacy-resolver
 
 RUN python -m pip install requests "urllib3<2"
 
-RUN RUN git config --system --add safe.directory *
+RUN git config --system --add safe.directory *
 
 RUN chmod +x entrypoint.sh
 
