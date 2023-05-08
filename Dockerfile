@@ -8,6 +8,8 @@ RUN apt-get update -y
 
 RUN pip install --upgrade pip awsebcli --use-deprecated=legacy-resolver
 
+RUN python -m pip install requests "urllib3<2"
+
 RUN chmod +x entrypoint.sh
 
 ENTRYPOINT ["/entrypoint.sh"]
