@@ -1,4 +1,6 @@
 # Aws eb cli action
+ Entrypoint has 1 line added to fix a problem with github, reffer to: https://github.com/actions/runner-images/issues/7049
+
 
 ![Run tests](https://github.com/hmanzur/actions-aws-eb/workflows/Run%20tests/badge.svg)
 
