@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:3.8
 
 ARG command="--version"
 
@@ -6,9 +6,9 @@ COPY entrypoint.sh /entrypoint.sh
 
 RUN apt-get update -y
 
-RUN pip install --upgrade pip awsebcli --use-deprecated=legacy-resolver
+RUN pip install --upgrade pip
 
-RUN python -m pip install requests "urllib3<2"
+RUN pip install wheel setuptools awsebcli
 
 RUN chmod +x entrypoint.sh
 
