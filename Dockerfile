@@ -8,7 +8,7 @@ RUN apt-get update -y
 
 RUN pip install --upgrade pip
 
-RUN pip install wheel setuptools 'awsebcli==3.22.1'
+RUN pip install wheel setuptools awsebcli
 
 RUN chmod +x entrypoint.sh
 
